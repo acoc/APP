@@ -1,0 +1,266 @@
+@charset "utf-8";
+/* CSS Document */
+/*common   start*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", "Segoe UI", Tahoma, Arial, "Hiragino Sans GB", STHeiti, "Microsoft Yahei", "WenQuanYi Micro Hei", sans-serif;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+header{
+	background-color: #0095d9!important;
+}
+header a{
+	color: #fff!important;
+}
+header{
+	display: flex;
+	font-size: 22px;
+	justify-content: space-between;
+	padding: 3% 4%;
+	background-color: #0095d9;
+	position: fixed;
+    z-index: 10;
+    right: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+header img{
+  	width: 100%;
+}
+.header-back{
+	width: 8%;
+	float: left;
+}
+.header-back img{
+	vertical-align: middle;
+}
+header .title{
+	font-size:22px;
+	color:#fff;
+	text-align: center;
+	display: block;
+	float: left;
+}
+nav {
+	width: 92%;
+	border-top: 1px solid #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	font-size: 22px;
+	padding: 3% 4%;
+	background-color: #fff;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+}
+nav a {
+    width: 8%;
+}
+nav img {
+    width: 100%;
+}
+.body-gray{
+	background-color: #eee;
+}
+banner,.cont{
+	display: block;
+    padding-top: 14%;
+}
+/*common   end*/
+/*index start*/
+banner,banner img{
+	width: 100%;
+}
+.index-mode{
+	margin-top:2%;
+	/* position: relative; */
+}
+.index-mode a{
+	color: #000;
+	text-decoration: none;
+	display: block;
+}
+.mode-list{
+	width: 76%;
+	border-radius: 7px;
+	background-color: #fff;
+	box-shadow: 0 0 2px #dedede;
+	padding: 5%;
+	font-size: 18px;
+	margin: 0 auto;
+	position: relative;
+	margin-top:6%;
+}
+.mode-list .mode-crumbs{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 14%;
+}
+.mode-list img{
+	width: 100%;
+}
+/*index end*/
+/* PL30 start */
+.table-view {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+	background-color: #fff;
+	margin-bottom: 8px;
+}
+.table-view-cell {
+    position: relative;
+    overflow: hidden;
+    padding: 16px 15px;
+    -webkit-touch-callout: none;
+}
+.table-view-cell:after {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    left: 15px;
+    height: 1px;
+    content: '';
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+    background-color: #e0e0e0;
+}
+.table-view-title:after{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 1px;
+	content: '';
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+	background-color: #dcdcdc;
+}
+.table-view-right{
+	float: right;
+}
+.table-view-gray{
+	color: #545454;
+}
+.table-order{
+	margin-top:6px;
+	background-color: #f5f5f5;
+	/* display: flex; */
+	/* font-size: 22px; */
+	/* justify-content: space-between; */
+}
+.table-order-title{
+	width: 92%;
+	display: block;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;   
+	color: #185598;
+	font-size: 18px;
+	padding: 4%;
+}
+.table-order b{
+	height: 1px;
+	border:none;
+	border-top: 1px solid #185598;
+	width: 30%;
+	display: block; 
+	margin-top: 10px;
+}
+.table-view-size{
+	font-size:14px;
+	line-height: 28px;
+}
+.table-order .table-view-size{
+	padding:10px 15px;
+}
+.table-btn-right {
+	float: right;
+}
+.table-btn{
+	font-size: 12px;
+	color: #757575;
+	border: 1px solid #757575;
+	padding: 11px 12px;
+	border-radius: 22px;
+	text-decoration: none;
+	line-height: 0;
+}
+.speed{
+	width:92%;
+	height: 80px;
+	padding:0 4%;
+	position: relative;
+}
+.speed-cont{
+	position: absolute;
+    z-index: 1;
+}
+.speed-list{
+	width: 10%;
+	float: left;
+	text-align: center;
+	padding: 0 1%;
+}
+.speed-list-text{
+	width: 100%;
+    display: block;
+    font-size: 10px;
+    color: #757575;
+    text-align: center; 
+}
+.speed-line{
+	width: 84%;
+	height: 1px;
+	display: block;
+	border-top: 1px solid #d6d6d6;
+	margin: 0 4%;
+	position: absolute;
+	top: 12px;
+	z-index: 0;
+}
+/* .table-order{
+	margin-bottom: 20%;
+} */
+/* PL30 end */
+/* View_unfinishOrder start */
+.view-unfinish-table-order{
+	background-color: #fff;
+	padding-bottom: 16px;
+}
+.view-unfinish-table-order,.view-unfinish-table-order .table-order-title{
+	margin-top:0;
+}
+.summary-table{
+	width: 92%;
+	margin:0 auto;
+	border-collapse:collapse; 
+	border-spacing:0; 
+}
+.summary-table td{
+	border: 1px solid #d2d2d2;
+	padding:6px;
+	text-align: center;
+	color: #545454;
+	font-size:14px;
+}
+.order-summary{
+	text-align: left!important;
+	background-color: #e6edf1;
+}
+.order-summary p{
+	margin:6px 8px;
+	color:#000;
+}
+/* View_unfinishOrder end */
